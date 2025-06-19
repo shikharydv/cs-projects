@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    /*box-sizing: border-box;*/
+    font-family:"Poppins", sans-serif;
+}
+body{   
+    height: 100vh;
+    background: linear-gradient(rgb(59, 57, 57) 50%, rgb(245, 104, 104) 50%);
+
+}
+.scoreboard{
+    background-color: rgb(159, 127, 68);
+    width: min(90%,35em);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 4em;
+    border-radius: 0.8em;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 3fr;
+    align-items: center;
+}
+.team{
+    text-align: center;
+    background-color: rgb(49, 132, 226);
+    padding: 3em;
+    border-radius: 0.8em;
+}
+.button{
+    cursor: pointer;
+}
+#reset-btn{
+    background-color: transparent;
+    border: 4px solid rgb(245, 104, 104);
+    color: rgb(245, 104, 104);
+    font-weight: 700;
+    height: 5em;
+    width: 6em;
+    margin: auto;
+    border-radius: 0.8em;
+}
+.team h2{
+    color: rgb(241, 163, 53);
+}
+.team p{
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.team button{
+    background-color: rgb(245, 104, 104);
+    border: none;
+    outline: none;
+    padding: 0.3em 0.75em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-size: 1.5em;
+}

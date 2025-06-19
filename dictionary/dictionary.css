@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:not(i){
+    font-family: "Poppins",sans-serif;
+}
+.into{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color:#704C5E;
+}
+body{
+    background-color: #B88C9E;
+}
+.container{
+    background-color: #F1C8DB;
+    width: 90vmin;
+    /*?*/
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 90px 50px;
+    border-radius: 15px;
+    box-shadow: 0 30px 35px #b97e96;
+}
+.searchbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.searchbox input{
+    padding: 8px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #8D8E8E;
+    font-size: 22px;
+}
+.searchbox button{
+    padding: 18px 0;
+    width: 27%;
+    background-color: /*#88A09E*/#7161EF;
+    border: none;
+    outline: none;
+    color: #EFD9CE;
+    font-weight: 800;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.searchbox button:hover{
+    background-color: #8378d7;
+    color: yellow;
+}
+.result{
+    position: relative;
+    width: 550px;
+}
+.result .word{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.result button{
+    background-color: transparent;
+    color: #14286b;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.result details{
+    display: flex;
+    gap: 13px;
+    color: #52D1DC;
+    margin: 5px 0 20px 0;
+    font-size: 15px;
+}
+.wordmeaning,
+.wordexample {
+  text-align: left;
+}
+.wordmeaning,
+.wordexample {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: large;
+  padding: 5px;
+  /*white-space: nowrap;  Optional: Prevent text from breaking to new lines */
+}
+  .container {
+    width: 90vmin;
+    overflow-y: auto;
+  }
+  
+  .result {
+    max-height: 400px;
+    width: 620px; 
+    overflow-y:auto;
+  }
+  
+  .result h3 {
+    font-size: 35px; 
+    color: #704C5E;
+    margin-bottom: 12px; 
+  }
+  button{
+    font-size: large;
+    color: white;
+  }
+  input{
+    border-radius: 10px;
+  }
+  
